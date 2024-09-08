@@ -17,8 +17,8 @@
     "web-vitals": "^1.1.1"
   },
 "scripts": {
-  "start": "npm start --legacy-peer-deps",
-  "build": "npm --legacy-peer-deps run build",
+  "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+  "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
   "test": "react-scripts test",
   "eject": "react-scripts eject"
 }
