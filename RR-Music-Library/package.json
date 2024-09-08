@@ -17,10 +17,14 @@
     "web-vitals": "^1.1.1"
   },
 "scripts": {
-  "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
-  "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
+  "start": "npm start --legacy-peer-deps",
+  "build": "npm --legacy-peer-deps run build",
   "test": "react-scripts test",
   "eject": "react-scripts eject"
+}
+,
+"engines": {
+  "node": "16.x"
 }
 ,
   "eslintConfig": {
